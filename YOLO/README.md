@@ -89,9 +89,7 @@ For GPU support, confirm that compatible CUDA and PyTorch versions are installed
 
 You are now set up to start using YOLO for object detection tasks! Explore the various tutorials and examples provided in the repository to get familiar with its capabilities.
 
-**Current date: Wednesday, January 29, 2025, 11 PM IST**
 
-Feel free to reach out to the community or raise issues on GitHub if you need further assistance! Happy coding!
 
 
 
