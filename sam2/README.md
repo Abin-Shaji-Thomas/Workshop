@@ -22,8 +22,7 @@ cd sam2
 
 3. **Download Python 3.12**
 ```bash
-#install python3.12
-apt install python3.12-venv
+sudo apt install python3.12-venv
 ```
 
 3. **Create Virtual Environment**
