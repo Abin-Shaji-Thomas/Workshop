@@ -20,6 +20,12 @@ git clone https://github.com/facebookresearch/sam2.git
 cd sam2
 ```
 
+3. **Download Python 3.12**
+```bash
+#install python3.12
+apt install python3.12-venv
+```
+
 3. **Create Virtual Environment**
 ```bash
 # For Linux/macOS
