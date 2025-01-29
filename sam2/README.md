@@ -37,8 +37,8 @@ sudo apt install python3.12-venv
 python3 -m venv sam2_env
 source sam2_env/bin/activate
 ```
-
-   **For Windows**
+  **For Windows**
+  
 ```bash
 python -m venv sam2_env
 sam2_env\Scripts\activate
