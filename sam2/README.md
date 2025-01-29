@@ -20,12 +20,17 @@ git clone https://github.com/facebookresearch/sam2.git
 cd sam2
 ```
 
-3. **Download Python 3.12**
+3.**Update your system**
+```bash
+sudo apt update
+```
+
+4. **Download Python 3.12**
 ```bash
 sudo apt install python3.12-venv
 ```
 
-3. **Create Virtual Environment**
+5. **Create Virtual Environment**
 ```bash
 # For Linux/macOS
 python3 -m venv sam2_env
@@ -36,13 +41,13 @@ python -m venv sam2_env
 sam2_env\Scripts\activate
 ```
 
-4. **Install Dependencies**
+6. **Install Dependencies**
 ```bash
 pip install -e .
 pip install -e ".[notebooks]"
 ```
 
-5. **Launch Jupyter Notebook**
+7. **Launch Jupyter Notebook**
 ```bash
 jupyter notebook
 ```
