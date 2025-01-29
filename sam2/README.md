@@ -52,5 +52,3 @@ jupyter notebook
 - Ensure you have the latest pip: `python -m pip install --upgrade pip`
 - For GPU support, confirm compatible CUDA and PyTorch versions are installed
 
-Citations:
-[1] https://github.com/Abin-Shaji-Thomas/Semanti
