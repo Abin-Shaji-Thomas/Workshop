@@ -31,12 +31,15 @@ sudo apt install python3.12-venv
 ```
 
 5. **Create Virtual Environment**
+
+   **For Linux/macOS**
 ```bash
-# For Linux/macOS
 python3 -m venv sam2_env
 source sam2_env/bin/activate
+```
 
-# For Windows
+   **For Windows**
+```bash
 python -m venv sam2_env
 sam2_env\Scripts\activate
 ```
