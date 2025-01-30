@@ -39,7 +39,7 @@ pip install torch torchvision
 pip install -e ".[notebooks]"
 pip install jupyter
 pip install ipykernel
-python -m ipykernel install --user --name=sam2_env --display-name "Python (sam2_env)"
+python -m ipykernel install --user --name=sam2_env 
 ```
 
 ### **6. Download Checkpoints**
@@ -98,7 +98,7 @@ pip install torch torchvision
 pip install -e ".[notebooks]"
 pip install jupyter
 pip install ipykernel
-python -m ipykernel install --user --name=sam2_env --display-name "Python (sam2_env)"
+python -m ipykernel install --user --name=sam2_env 
 ```
 
 ### **7. Download Checkpoints**
