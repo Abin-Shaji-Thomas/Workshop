@@ -38,9 +38,9 @@ cd ultralytics
 ### 5. Create a Virtual Environment
 ```sh
 python -m venv yolo_env
-.\yolo_env\Scripts\activate  # Activate the environment
+.\yolo_env\Scripts\activate  
 ```
-
+ Activate the environment
 ### 6. Download and Install Dependencies
 ```sh
 pip install ultralytics
