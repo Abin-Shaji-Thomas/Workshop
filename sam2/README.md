@@ -18,6 +18,7 @@ cd sam2_workshop
 2. **Install Python**
 - Download Python 3.10+ from official Python website
 - Ensure "Add Python to PATH" is checked during installation
+- https://www.python.org/
 
 3. **Clone SAM 2 Repository**
 ```powershell
@@ -25,18 +26,13 @@ git clone https://github.com/facebookresearch/sam2.git
 cd sam2
 ```
 
-4. **Download Python 3.12**
-```bash
-sudo apt install python3.12-venv
-```
-
-5. **Create Virtual Environment**
+4. **Create Virtual Environment**
 ```powershell
 python -m venv sam2_env
 sam2_env\Scripts\activate
 ```
 
-6. **Install Dependencies**
+5. **Install Dependencies**
 ```powershell
 pip install torch torchvision
 pip install -e ".[notebooks]"
