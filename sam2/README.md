@@ -20,7 +20,7 @@ git clone https://github.com/facebookresearch/sam2.git
 cd sam2
 ```
 
-3.**Update your system**
+3. **Update your system**
 ```bash
 sudo apt update
 ```
@@ -44,10 +44,13 @@ python -m venv sam2_env
 sam2_env\Scripts\activate
 ```
 
-6. **Install Dependencies**
+6. **Install Dependencies and Jupyter**
 ```bash
 pip install -e .
 pip install -e ".[notebooks]"
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=sam2_env --display-name "Python (sam2_env)"
 ```
 
 7. **Launch Jupyter Notebook**
@@ -63,5 +66,5 @@ jupyter notebook
 ### Troubleshooting
 - If facing installation issues, verify Python and pip versions
 - Ensure you have the latest pip: `python -m pip install --upgrade pip`
-- For GPU support, confirm compatible CUDA and PyTorch versions are installed
+- For GPU support, confirm compatible CUDA and PyTorch versions are installed[1][2]
 
