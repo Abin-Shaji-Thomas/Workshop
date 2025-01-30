@@ -61,13 +61,13 @@ With your virtual environment activated, install the required packages:
 pip install -r requirements.txt
 ```
 
-### 7. Launch Jupyter Notebook (Optional)
+### 7. Launch Jupyter Notebook 
 
 If you want to use Jupyter Notebook for running YOLO examples, install Jupyter:
 
 ```
 pip install jupyter
-jupyter notebook # This will open the Jupyter interface in your web browser.
+jupyter notebook 
 ```
 
 ## Important Notes for Windows Users
@@ -136,12 +136,12 @@ With your virtual environment activated, install the required packages:
 ```
 pip install -r requirements.txt 
 ```
-### 7. Launch Jupyter Notebook (Optional)
+### 7. Launch Jupyter Notebook 
 
 If you want to use Jupyter Notebook for running YOLO examples, install Jupyter:
 ```
 pip install jupyter
-jupyter notebook # This will open the Jupyter interface in your web browser.
+jupyter notebook 
 ```
 
 ## Important Notes
