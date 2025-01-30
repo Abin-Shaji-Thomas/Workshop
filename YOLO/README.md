@@ -32,7 +32,7 @@ cd yolo_project
 ### 4. Clone the YOLO Repository
 ```sh
 git clone https://github.com/ultralytics/ultralytics.git
-dcd ultralytics
+cd ultralytics
 ```
 
 ### 5. Create a Virtual Environment
