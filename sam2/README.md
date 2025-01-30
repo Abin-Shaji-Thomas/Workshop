@@ -1,4 +1,4 @@
-## SAM 2 Workshop Setup Guide for Windows and Linux Users
+## SAM 2 Workshop Setup Guide for Windows and Ubuntu Users
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -6,23 +6,23 @@
 - pip
 - Virtual environment support
 
-### Step-by-Step Installation
+### Windows Installation Steps
 
-1. **Create Workshop Directory**
-```bash
+1. **Prepare Windows Environment**
+```powershell
+# Open PowerShell as Administrator
 mkdir sam2_workshop
 cd sam2_workshop
 ```
 
-2. **Clone the Repository**
-```bash
+2. **Install Python**
+- Download Python 3.10+ from official Python website
+- Ensure "Add Python to PATH" is checked during installation
+
+3. **Clone SAM 2 Repository**
+```powershell
 git clone https://github.com/facebookresearch/sam2.git
 cd sam2
-```
-
-3. **Update your system**
-```bash
-sudo apt update
 ```
 
 4. **Download Python 3.12**
@@ -31,40 +31,89 @@ sudo apt install python3.12-venv
 ```
 
 5. **Create Virtual Environment**
-
-   **For Linux/macOS**
-```bash
-python3 -m venv sam2_env
-source sam2_env/bin/activate
-```
-  **For Windows**
-  
-```bash
+```powershell
 python -m venv sam2_env
 sam2_env\Scripts\activate
 ```
 
-6. **Install Dependencies and Jupyter**
-```bash
-pip install -e .
+6. **Install Dependencies**
+```powershell
+pip install torch torchvision
 pip install -e ".[notebooks]"
 pip install jupyter
 pip install ipykernel
 python -m ipykernel install --user --name=sam2_env --display-name "Python (sam2_env)"
 ```
 
-7. **Launch Jupyter Notebook**
+### Launch Jupyter Notebook
 ```bash
+# For both Windows and Ubuntu
+jupyter notebook
+```
+
+### Ubuntu Installation Steps
+
+1. **Update System**
+```bash
+sudo apt update
+sudo apt install python3-pip python3-venv git
+```
+
+2. **Create Workshop Directory**
+```bash
+mkdir sam2_workshop
+cd sam2_workshop
+```
+
+3. **Clone SAM 2 Repository**
+```bash
+git clone https://github.com/facebookresearch/sam2.git
+cd sam2
+```
+
+4. **Download Python 3.12**
+```bash
+sudo apt install python3.12-venv
+```
+
+5. **Create Virtual Environment**
+```bash
+python3 -m venv sam2_env
+source sam2_env/bin/activate
+```
+
+6. **Install Dependencies**
+```bash
+pip install torch torchvision
+pip install -e ".[notebooks]"
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=sam2_env --display-name "Python (sam2_env)"
+```
+
+### Launch Jupyter Notebook
+```bash
+# For both Windows and Ubuntu
 jupyter notebook
 ```
 
 ### Important Notes
-- Ensure you're inside the activated virtual environment before running commands
-- The `jupyter notebook` command will open a web browser interface with available notebooks
-- Recommended to use Windows Subsystem for Linux (WSL) if on Windows for best compatibility
+- Always activate virtual environment before working
+- For Windows, consider using Windows Subsystem for Linux (WSL) for better compatibility
+- Verify Python version: `python --version`
 
 ### Troubleshooting
-- If facing installation issues, verify Python and pip versions
-- Ensure you have the latest pip: `python -m pip install --upgrade pip`
-- For GPU support, confirm compatible CUDA and PyTorch versions are installed[1][2]
+- Upgrade pip: `python -m pip install --upgrade pip`
+- For GPU support, ensure compatible CUDA and PyTorch versions
+- Check CUDA availability: 
+```python
+python -c "import torch; print(torch.cuda.is_available())"
+```
+
+### GPU Recommendations
+- Recommended GPU: NVIDIA with CUDA support
+- Suggested CUDA version: 12.1
+- Verify GPU compatibility before installation
+
+**Warning**: Installation may vary slightly based on specific system configurations.
 
