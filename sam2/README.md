@@ -35,7 +35,6 @@ sam2_env\Scripts\activate
 
 ### **5. Install Dependencies**
 ```powershell
-pip install torch torchvision
 pip install -e ".[notebooks]"
 pip install jupyter
 pip install ipykernel
@@ -94,7 +93,6 @@ source sam2_env/bin/activate
 
 ### **6. Install Dependencies**
 ```bash
-pip install torch torchvision
 pip install -e ".[notebooks]"
 pip install jupyter
 pip install ipykernel
