@@ -42,10 +42,8 @@ python -m venv yolo_env
 ```
 
 ### 6. Download and Install Dependencies
-Since the `requirements.txt` file is not in the original YOLO repository, download it from the provided repository:
 ```sh
-curl -o requirements.txt https://raw.githubusercontent.com/Abin-Shaji-Thomas/Workshop/main/YOLO/requirements.txt
-pip install -r requirements.txt
+pip install ultralytics
 ```
 
 ### 7. Install Jupyter Kernel
@@ -103,8 +101,7 @@ source yolo_env/bin/activate  # Activate the environment
 
 ### 6. Download and Install Dependencies
 ```sh
-wget -O requirements.txt https://raw.githubusercontent.com/Abin-Shaji-Thomas/Workshop/main/YOLO/requirements.txt
-pip install -r requirements.txt
+pip install ultralytics
 ```
 
 ### 7. Install Jupyter Kernel
